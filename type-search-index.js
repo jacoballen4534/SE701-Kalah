@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"kalah.Board","l":"Board"},{"p":"kalah","l":"GameManager"},{"p":"kalah","l":"Globals"},{"p":"kalah.Board","l":"House"},{"p":"kalah.Player","l":"Human"},{"p":"kalah","l":"Kalah"},{"p":"kalah","l":"Output"},{"p":"kalah.Board","l":"Pit"},{"p":"kalah.Player","l":"Player"},{"p":"kalah.Board","l":"Store"}]
