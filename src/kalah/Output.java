@@ -15,8 +15,15 @@ public class Output {
     }
 
     public void displayBoard(Board board){
+        // Create border string
+        StringBuilder border = new StringBuilder();
+        for (int i = 0; i < Globals.NUMBER_OF_HOUSES_PER_PLAYER; i++){
+            border.append("-------+");
+        }
+        border.setLength(border.length() - 1);
+
         // Print top border
-        this.outputDevice.println("+----+-------+-------+-------+-------+-------+-------+----+");
+        this.outputDevice.println( "+----+" + border.toString() + "+----+");
 
         // Print first line
         int firstRowPitIndex = board.getFinalPitIndex();
@@ -27,7 +34,7 @@ public class Output {
         this.outputDevice.println(" " + this.padNumbers(board.getSeedCount(firstRowPitIndex)) + " |");
 
         // print center separator
-        this.outputDevice.println("|    |-------+-------+-------+-------+-------+-------|    |");
+        this.outputDevice.println( "|    |" + border.toString() + "|    |");
 
         // Print second line
         int secondRowPitIndex = 0;
@@ -38,7 +45,7 @@ public class Output {
         this.outputDevice.println(" P" + board.getPitOwnerName(secondRowPitIndex) + " |");
 
         // Print bottom border
-        this.outputDevice.println("+----+-------+-------+-------+-------+-------+-------+----+");
+        this.outputDevice.println( "+----+" + border.toString() + "+----+");
     }
 
     private String padNumbers(int numberToPad) {
