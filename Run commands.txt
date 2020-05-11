@@ -1,0 +1,9 @@
+Moving kalah folder out of src.
+Mac
+javac --release 8 -cp junit-3.8.2.jar:kalah.jar:. kalah/Kalah.java
+java -cp junit-3.8.2.jar:kalah.jar:. junit.textui.TestRunner kalah.test.TestKalah
+
+
+Windows
+javac --release 8 -cp junit-3.8.2.jar;kalah.jar;. kalah/Kalah.java
+java -cp junit-3.8.2.jar;kalah.jar;. junit.textui.TestRunner kalah.test.TestKalah
