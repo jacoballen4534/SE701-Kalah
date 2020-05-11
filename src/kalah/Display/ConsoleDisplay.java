@@ -1,15 +1,17 @@
-package kalah;
+package kalah.Display;
 
 import com.qualitascorpus.testsupport.IO;
 import kalah.Board.Board;
+import kalah.Globals;
 
 /**
-* A class to handle all display requests, formatting and showing them on the console.
+* An output adapter implementation to interface with a console to display the game data.
 */
-public class Output {
+
+public class ConsoleDisplay implements OutputAdapter{
     private final IO outputDevice;
 
-    public Output(IO outputDevice) {
+    public ConsoleDisplay(IO outputDevice) {
         this.outputDevice = outputDevice;
     }
 
