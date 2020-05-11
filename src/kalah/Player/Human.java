@@ -3,6 +3,9 @@ package kalah.Player;
 import com.qualitascorpus.testsupport.IO;
 import kalah.Globals;
 
+/**
+ * A player that interfaces with a keyboard.
+ */
 public class Human extends Player{
     private final IO inputDevice;
 

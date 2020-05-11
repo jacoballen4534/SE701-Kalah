@@ -3,6 +3,9 @@ package kalah;
 import com.qualitascorpus.testsupport.IO;
 import kalah.Board.Board;
 
+/**
+* A class to handle all display requests, formatting and showing them on the console.
+*/
 public class Output {
     private final IO outputDevice;
 

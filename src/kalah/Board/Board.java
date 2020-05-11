@@ -4,6 +4,9 @@ import kalah.Globals;
 import kalah.Player.Player;
 import java.util.ArrayList;
 
+/**
+ * Represents the game board. Holds all of the houses and stores.
+ */
 public class Board {
     private final ArrayList<Pit> pits;
 

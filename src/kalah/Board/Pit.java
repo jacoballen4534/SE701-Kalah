@@ -1,7 +1,9 @@
 package kalah.Board;
-
 import kalah.Player.Player;
 
+/**
+ * An abstract pit to hold seeds
+ */
 abstract public class Pit {
     protected int numberOfSeeds;
 

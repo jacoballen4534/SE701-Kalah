@@ -7,6 +7,10 @@ import kalah.Player.Player;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+/**
+ * Holds the playing board and player.
+ * In charge of asking the correct player to play and passes messages between players, boards and output.
+ */
 public class GameManager {
     private final static int QUIT_INDICATOR = -1;
 

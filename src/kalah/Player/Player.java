@@ -2,6 +2,9 @@ package kalah.Player;
 
 import kalah.Globals;
 
+/**
+ * An abstract player for concrete implementations to inherit from with its unique input method.
+ */
 abstract public class Player {
     protected final int id;
 

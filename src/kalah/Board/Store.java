@@ -2,6 +2,9 @@ package kalah.Board;
 
 import kalah.Player.Player;
 
+/**
+ * A special pit that all captured seeds go to
+ */
 public class Store extends Pit{
     public Store(int startingNumberOfSeeds, Player owner) {
         super(startingNumberOfSeeds, owner);
