@@ -3,6 +3,7 @@ package kalah;
 import com.qualitascorpus.testsupport.IO;
 import kalah.Board.Board;
 import kalah.Display.ConsoleDisplay;
+import kalah.Display.OutputAdapter;
 import kalah.Player.Human;
 import kalah.Player.Player;
 import java.util.ArrayList;
@@ -18,7 +19,7 @@ public class GameManager {
     private final Board board;
     private final ArrayList<Player> players;
     private int currentPlayerIndex;
-    private final ConsoleDisplay output;
+    private final OutputAdapter output;
 
     public GameManager(IO io) {
         this.players = new ArrayList<Player>(Arrays.asList(new Human(io, 0), new Human(io, 1)));
