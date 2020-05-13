@@ -1,7 +1,7 @@
 <component name="libraryTable">
-  <library name="kalah">
+  <library name="kalah-vertical">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/kalah.jar!/" />
+      <root url="jar://$PROJECT_DIR$/kalah-vertical.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
