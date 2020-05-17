@@ -9,7 +9,7 @@ import kalah.Globals;
 */
 
 public class ConsoleDisplay implements OutputAdapter{
-    private final IO outputDevice;
+    protected final IO outputDevice;
 
     public ConsoleDisplay(IO outputDevice) {
         this.outputDevice = outputDevice;
@@ -53,7 +53,7 @@ public class ConsoleDisplay implements OutputAdapter{
         this.outputDevice.println( "+----+" + border.toString() + "+----+");
     }
 
-    private String padNumbers(int numberToPad) {
+    protected String padNumbers(int numberToPad) {
         String padding = "";
         if (numberToPad < 10) {
             padding = " ";
@@ -61,3 +61,26 @@ public class ConsoleDisplay implements OutputAdapter{
         return padding + numberToPad;
     }
 }
+
+/*
++---------------+
+|       | P2  0 |
++-------+-------+
+| 1[ 4] | 6[ 4] |
+| 2[ 4] | 5[ 4] |
+| 3[ 4] | 4[ 4] |
+| 4[ 4] | 3[ 4] |
+| 5[ 4] | 2[ 4] |
+| 6[ 4] | 1[ 4] |
++-------+-------+
+| P1  0 |       |
++---------------+
+ */
+
+/*
++----+-------+-------+-------+-------+-------+-------+----+
+| P2 | 6[ 5] | 5[ 1] | 4[ 2] | 3[ 3] | 2[ 4] | 1[ 0] | 14 |
+|    |-------+-------+-------+-------+-------+-------|    |
+|  4 | 1[ 5] | 2[ 5] | 3[ 2] | 4[ 0] | 5[ 0] | 6[ 3] | P1 |
++----+-------+-------+-------+-------+-------+-------+----+
+ */

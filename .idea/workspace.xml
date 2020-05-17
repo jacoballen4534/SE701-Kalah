@@ -2,55 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fe10ec8-a066-4661-9964-f6905ab20635" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/SE701-Kalah.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/kalah_vertical.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kalah-vertical.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/kalah.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/kalah_resources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IO.html" beforeDir="false" afterPath="$PROJECT_DIR$/IO.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kalah.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kalah_resources.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kalah/Board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/vertical/kalah/Board/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kalah/Board/House.java" beforeDir="false" afterPath="$PROJECT_DIR$/vertical/kalah/Board/House.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kalah/Board/Pit.java" beforeDir="false" afterPath="$PROJECT_DIR$/vertical/kalah/Board/Pit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kalah/Board/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/vertical/kalah/Board/Store.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kalah/Display/ConsoleDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/vertical/kalah/Display/ConsoleDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kalah/Display/OutputAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/vertical/kalah/Display/OutputAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kalah/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/vertical/kalah/GameManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kalah/Globals.java" beforeDir="false" afterPath="$PROJECT_DIR$/vertical/kalah/Globals.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kalah/Kalah.java" beforeDir="false" afterPath="$PROJECT_DIR$/vertical/kalah/Kalah.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kalah/Player/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/vertical/kalah/Player/Human.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kalah/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/vertical/kalah/Player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/capture.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_specifications/capture.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/continue_wrap.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_specifications/continue_wrap.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/double_wrap.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_specifications/double_wrap.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/endinempty.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_specifications/endinempty.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/exactlapcapture.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_specifications/exactlapcapture.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/exactlapemptycapture.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_specifications/exactlapemptycapture.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/full_game1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_specifications/full_game1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/full_game2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_specifications/full_game2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/full_game_empty.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_specifications/full_game_empty.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/full_game_empty_houses.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_specifications/full_game_empty_houses.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/full_game_store.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_specifications/full_game_store.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/full_game_tie.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_specifications/full_game_tie.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/p1_continue.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_specifications/p1_continue.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/quit.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_specifications/quit.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/simple_start.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_specifications/simple_start.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/simple_two_moves.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_specifications/simple_two_moves.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/single_wrap.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_specifications/single_wrap.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/test1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/test2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/useempty.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_specifications/useempty.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/wrapped.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_specifications/wrapped.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertical/kalah/Display/VerticalConsoleDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vertical/kalah/Board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/vertical/kalah/Board/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vertical/kalah/Display/ConsoleDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/vertical/kalah/Display/ConsoleDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vertical/kalah/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/vertical/kalah/GameManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -71,10 +39,16 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/kalah-vertical.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SE701-A3" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="kalah.Display" />
+    </key>
   </component>
   <component name="RunManager" selected="JUnit.TestKalah">
     <configuration name="Kalah" type="Application" factoryName="Application">
@@ -120,6 +94,11 @@
       <workItem from="1589376337538" duration="1000" />
       <workItem from="1589376346893" duration="377000" />
       <workItem from="1589376735196" duration="705000" />
+      <workItem from="1589377453757" duration="1747000" />
+      <workItem from="1589438418718" duration="5000" />
+      <workItem from="1589452681201" duration="842000" />
+      <workItem from="1589706570409" duration="4753000" />
+      <workItem from="1589714822751" duration="3814000" />
     </task>
     <servers />
   </component>
@@ -139,26 +118,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="260" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589377366778" />
-    <state x="687" y="149" key="FileChooserDialogImpl" timestamp="1589376619844">
+    <state x="687" y="149" key="FileChooserDialogImpl" timestamp="1589707446344">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="687" y="149" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589376619844" />
-    <state width="1865" height="440" key="GridCell.Tab.0.bottom" timestamp="1589377440547">
+    <state x="687" y="149" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589707446344" />
+    <state width="1865" height="485" key="GridCell.Tab.0.bottom" timestamp="1589718039064">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="440" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589377440547" />
-    <state width="1865" height="440" key="GridCell.Tab.0.center" timestamp="1589377440547">
+    <state width="1865" height="485" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589718039064" />
+    <state width="1865" height="485" key="GridCell.Tab.0.center" timestamp="1589718039064">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="440" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589377440547" />
-    <state width="1865" height="440" key="GridCell.Tab.0.left" timestamp="1589377440546">
+    <state width="1865" height="485" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589718039064" />
+    <state width="1865" height="485" key="GridCell.Tab.0.left" timestamp="1589718039064">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="440" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589377440546" />
-    <state width="1865" height="440" key="GridCell.Tab.0.right" timestamp="1589377440547">
+    <state width="1865" height="485" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589718039064" />
+    <state width="1865" height="485" key="GridCell.Tab.0.right" timestamp="1589718039064">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="440" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589377440547" />
+    <state width="1865" height="485" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589718039064" />
     <state width="1865" height="331" key="GridCell.Tab.1.bottom" timestamp="1589376724278">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -179,5 +158,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="312" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1589376705339" />
+    <state x="532" y="237" width="840" height="1034" key="run.anything.popup" timestamp="1589716254028">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="532" y="237" width="840" height="1034" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1589716254028" />
   </component>
 </project>

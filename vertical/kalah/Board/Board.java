@@ -90,7 +90,7 @@ public class Board {
         return true;
     }
 
-    private int oppositePitIndex(int index) {
+    public int oppositePitIndex(int index) {
         return 2 * Globals.NUMBER_OF_HOUSES_PER_PLAYER - index;
     }
 

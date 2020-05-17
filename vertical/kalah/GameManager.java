@@ -4,6 +4,7 @@ import com.qualitascorpus.testsupport.IO;
 import kalah.Board.Board;
 import kalah.Display.ConsoleDisplay;
 import kalah.Display.OutputAdapter;
+import kalah.Display.VerticalConsoleDisplay;
 import kalah.Player.Human;
 import kalah.Player.Player;
 import java.util.ArrayList;
@@ -25,7 +26,7 @@ public class GameManager {
         this.players = new ArrayList<Player>(Arrays.asList(new Human(io, 0), new Human(io, 1)));
         this.currentPlayerIndex = 0;
         this.board = new Board(this.players);
-        this.output = new ConsoleDisplay(io);
+        this.output = new VerticalConsoleDisplay(io);
     }
 
     public void play() {
