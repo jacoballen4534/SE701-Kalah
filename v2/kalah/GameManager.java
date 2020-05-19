@@ -26,11 +26,11 @@ public class GameManager {
         this.players = new ArrayList<Player>(Arrays.asList(new Human(io, 0), new Human(io, 1)));
         this.currentPlayerIndex = 0;
         this.board = new Board(this.players);
-        this.output = new VerticalConsoleDisplay(io);
+        this.output = new ConsoleDisplay(io);
     }
 
     public void play() {
-        this.output.displayBoard(board);
+        this.output.displayBoard(this.board, this.players);
 
         while (true) {
 
@@ -48,12 +48,12 @@ public class GameManager {
 
             if (!this.board.validSelection(pitIndex, players.get(currentPlayerIndex))) {
                 output.displayMessage("House is empty. Move again.");
-                this.output.displayBoard(board);
+                this.output.displayBoard(this.board, this.players);
                 continue;
             }
 
             boolean turnComplete = board.sowSeeds(players.get(currentPlayerIndex), pitIndex);
-            this.output.displayBoard(board);
+            this.output.displayBoard(this.board, this.players);
 
             if (turnComplete) {
                 nextPlayer();
@@ -92,6 +92,6 @@ public class GameManager {
 
     public void gameOver(){
         this.output.displayMessage("Game over");
-        this.output.displayBoard(board);
+        this.output.displayBoard(this.board, this.players);
     }
 }

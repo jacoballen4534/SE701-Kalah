@@ -3,6 +3,9 @@ package kalah.Display;
 import com.qualitascorpus.testsupport.IO;
 import kalah.Board.Board;
 import kalah.Globals;
+import kalah.Player.Player;
+
+import java.util.ArrayList;
 
 /**
 * An output adapter implementation to interface with a console to display the game data.
@@ -19,8 +22,9 @@ public class ConsoleDisplay implements OutputAdapter{
         this.outputDevice.println(message);
     }
 
-    public void displayBoard(Board board){
-        // Create border string
+    //TODO: Use the new board.get seeds and get store methods for printing.
+    public void displayBoard(final Board board, final ArrayList<Player> players){
+     // Create border string
         StringBuilder border = new StringBuilder();
         for (int i = 0; i < Globals.NUMBER_OF_HOUSES_PER_PLAYER; i++){
             border.append("-------+");
@@ -59,5 +63,10 @@ public class ConsoleDisplay implements OutputAdapter{
             padding = " ";
         }
         return padding + numberToPad;
+    }
+
+    //TODO: Use this in Console Display. Look at what else can be shared between console displays.
+    protected String buildHouseString (int houseNumber, int seedCount) {
+        return " " + houseNumber + "[" + this.padNumbers(seedCount) + "] ";
     }
 }

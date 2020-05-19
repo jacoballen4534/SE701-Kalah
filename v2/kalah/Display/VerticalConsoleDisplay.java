@@ -3,6 +3,9 @@ package kalah.Display;
 import com.qualitascorpus.testsupport.IO;
 import kalah.Board.Board;
 import kalah.Globals;
+import kalah.Player.Player;
+
+import java.util.ArrayList;
 
 public class VerticalConsoleDisplay extends ConsoleDisplay {
     public VerticalConsoleDisplay(IO outputDevice) {
@@ -10,8 +13,7 @@ public class VerticalConsoleDisplay extends ConsoleDisplay {
     }
 
     @Override
-    public void displayBoard(Board board) {
-
+    public void displayBoard(final Board board, final ArrayList<Player> players){
         // Print first store
         int firstStoreIndex = board.getFinalPitIndex();
         this.printStore(board.getPitOwnerName(firstStoreIndex), board.getSeedCount(firstStoreIndex), true);
@@ -54,7 +56,6 @@ public class VerticalConsoleDisplay extends ConsoleDisplay {
         this.outputDevice.println(bottomBorder);
     }
 
-
     private String buildBoardRow (int leftHouseNumber, int leftSeedCount, int rightHouseNumber, int rightSeedCount) {
         String row = "|";
         row += this.buildHouseString(leftHouseNumber, leftSeedCount);
@@ -62,9 +63,5 @@ public class VerticalConsoleDisplay extends ConsoleDisplay {
         row += this.buildHouseString(rightHouseNumber, rightSeedCount);
         row += "|";
         return row;
-    }
-
-    private String buildHouseString (int houseNumber, int seedCount) {
-        return " " + houseNumber + "[" + this.padNumbers(seedCount) + "] ";
     }
 }

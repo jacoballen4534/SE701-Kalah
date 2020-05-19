@@ -107,4 +107,21 @@ public class Board {
         }
         return score;
     }
+
+    /* Retrieve the number of seeds in all of a players houses. */
+    public ArrayList<Integer> getHouseSeedCount(Player player) {
+        ArrayList<Integer> playerSeeds = new ArrayList<>();
+        int startingIndex = player.getStartingIndex();
+        for (int i = 0; i <= Globals.NUMBER_OF_HOUSES_PER_PLAYER; i++) {
+            Pit pit = this.pits.get(startingIndex+i);
+            playerSeeds.add(pit.getNumberOfSeeds());
+        }
+        return playerSeeds;
+    }
+
+    public int getStoreSeedCount(Player player) {
+        int storeIndex = player.getStoreIndex();
+        Pit store = this.pits.get(storeIndex);
+        return store.getNumberOfSeeds();
+    }
 }
