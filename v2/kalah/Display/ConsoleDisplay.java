@@ -22,9 +22,14 @@ public class ConsoleDisplay implements OutputAdapter{
         this.outputDevice.println(message);
     }
 
-    //TODO: Use the new board.get seeds and get store methods for printing.
     public void displayBoard(final Board board, final ArrayList<Player> players){
-     // Create border string
+        // Get players and house seeds
+        Player player1 = players.get(0);
+        Player player2 = players.get(1);
+        ArrayList<Integer> player1HouseSeeds = board.getHouseSeedCounts(player1);
+        ArrayList<Integer> player2HouseSeeds = board.getHouseSeedCounts(player2);
+
+        // Create border string
         StringBuilder border = new StringBuilder();
         for (int i = 0; i < Globals.NUMBER_OF_HOUSES_PER_PLAYER; i++){
             border.append("-------+");
@@ -35,23 +40,29 @@ public class ConsoleDisplay implements OutputAdapter{
         this.outputDevice.println( "+----+" + border.toString() + "+----+");
 
         // Print first line
-        int firstRowPitIndex = board.getFinalPitIndex();
-        this.outputDevice.print("| P" + board.getPitOwnerName(firstRowPitIndex--) + " |");
-        for(int displayPitNumber = Globals.NUMBER_OF_HOUSES_PER_PLAYER; displayPitNumber > 0; displayPitNumber--) {
-            this.outputDevice.print(" " + displayPitNumber + "[" + this.padNumbers(board.getSeedCount(firstRowPitIndex--)) + "] |");
+        this.outputDevice.print("|" + this.buildPlayerNameString(player2) + " |");
+
+        for(int pitNumber = player2HouseSeeds.size(); pitNumber > 0; pitNumber--) {
+            int pitIndex = pitNumber - 1;
+            int numberOfSeeds = player2HouseSeeds.get(pitIndex);
+            this.outputDevice.print(this.buildHouseString(pitNumber, numberOfSeeds) + "|");
         }
-        this.outputDevice.println(" " + this.padNumbers(board.getSeedCount(firstRowPitIndex)) + " |");
+
+        this.outputDevice.println(this.buildStoreString(board, player1));
 
         // print center separator
         this.outputDevice.println( "|    |" + border.toString() + "|    |");
 
         // Print second line
-        int secondRowPitIndex = 0;
-        this.outputDevice.print("| " + this.padNumbers(board.getSeedCount(board.getFinalPitIndex())) + " |");
-        for(int displayPitNumber = 1; displayPitNumber <= Globals.NUMBER_OF_HOUSES_PER_PLAYER; displayPitNumber++) {
-            this.outputDevice.print(" " + displayPitNumber + "[" + this.padNumbers(board.getSeedCount(secondRowPitIndex++)) + "] |");
+        this.outputDevice.print("|" + this.buildStoreString(board, player2));
+
+        for(int pitNumber = 1; pitNumber <= player1HouseSeeds.size(); pitNumber++) {
+            int pitIndex = pitNumber - 1;
+            int numberOfSeeds = player1HouseSeeds.get(pitIndex);
+            this.outputDevice.print(this.buildHouseString(pitNumber, numberOfSeeds) + "|");
         }
-        this.outputDevice.println(" P" + board.getPitOwnerName(secondRowPitIndex) + " |");
+
+        this.outputDevice.println(this.buildPlayerNameString(player1) + " |");
 
         // Print bottom border
         this.outputDevice.println( "+----+" + border.toString() + "+----+");
@@ -65,8 +76,16 @@ public class ConsoleDisplay implements OutputAdapter{
         return padding + numberToPad;
     }
 
-    //TODO: Use this in Console Display. Look at what else can be shared between console displays.
     protected String buildHouseString (int houseNumber, int seedCount) {
         return " " + houseNumber + "[" + this.padNumbers(seedCount) + "] ";
+    }
+
+    protected String buildPlayerNameString(Player player) {
+        return " P" + player.getName();
+    }
+
+    protected String buildStoreString(Board board, Player storeOwner){
+        int seedsInStore = board.getStoreSeedCounts(storeOwner);
+        return " " + this.padNumbers(seedsInStore) + " |";
     }
 }

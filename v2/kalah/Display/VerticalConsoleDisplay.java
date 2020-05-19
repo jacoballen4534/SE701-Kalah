@@ -14,46 +14,52 @@ public class VerticalConsoleDisplay extends ConsoleDisplay {
 
     @Override
     public void displayBoard(final Board board, final ArrayList<Player> players){
+        // Get players and house seeds
+        Player player1 = players.get(0);
+        Player player2 = players.get(1);
+        ArrayList<Integer> player1HouseSeeds = board.getHouseSeedCounts(player1);
+        ArrayList<Integer> player2HouseSeeds = board.getHouseSeedCounts(player2);
+
         // Print first store
-        int firstStoreIndex = board.getFinalPitIndex();
-        this.printStore(board.getPitOwnerName(firstStoreIndex), board.getSeedCount(firstStoreIndex), true);
+        this.printStore(board, player2, true);
 
         // Print the players houses
-        for(int leftHouseNumber = 1, rightHouseNumber = Globals.NUMBER_OF_HOUSES_PER_PLAYER;
-            leftHouseNumber <= Globals.NUMBER_OF_HOUSES_PER_PLAYER; leftHouseNumber++, rightHouseNumber--) {
+        for(int leftHouseNumber = 1, rightHouseNumber = player2HouseSeeds.size();
+            leftHouseNumber <= player1HouseSeeds.size(); leftHouseNumber++, rightHouseNumber--) {
 
-            int leftPitIndex = leftHouseNumber-1;
-            int rightPitIndex = board.oppositePitIndex(leftPitIndex);
+            int leftPitIndex = leftHouseNumber - 1;
+            int rightPitIndex = rightHouseNumber - 1;
 
-            int leftSeedNumber = board.getSeedCount(leftPitIndex);
-            int rightSeedNumber = board.getSeedCount(rightPitIndex);
+            int leftNumberOfSeeds = player1HouseSeeds.get(leftPitIndex);
+            int rightNumberOfSeeds = player2HouseSeeds.get(rightPitIndex);
 
-            String boardRow = this.buildBoardRow(leftHouseNumber, leftSeedNumber, rightHouseNumber, rightSeedNumber);
+            String boardRow = this.buildBoardRow(leftHouseNumber, leftNumberOfSeeds, rightHouseNumber, rightNumberOfSeeds);
             this.outputDevice.println(boardRow);
         }
 
         // Print second store
-        int secondStoreIndex = Globals.NUMBER_OF_HOUSES_PER_PLAYER;
-        this.printStore(board.getPitOwnerName(secondStoreIndex), board.getSeedCount(secondStoreIndex), false);
+        this.printStore(board, player1, false);
     }
 
-    private void printStore (int playerName, int score, boolean isTopStore) {
-        final String emptyContainer = "|       ";
-        final String topBorder = isTopStore ? "+---------------+" : "+-------+-------+";
-        final String bottomBorder = isTopStore ? "+-------+-------+" : "+---------------+";
-
-        // Print the top border of the store
-        this.outputDevice.println(topBorder);
+    private void printStore(Board board, Player storeOwner, boolean isTopStore) {
+        final String outerBorder = "+---------------+";
+        final String innerBorder = "+-------+-------+";
 
         // Print empty pit and player store.
         if (isTopStore) {
-            this.outputDevice.println(emptyContainer + "| P" + playerName + " " + this.padNumbers(score) + " |");
+            this.outputDevice.println(outerBorder);
+            this.outputDevice.print("|       |");
+            this.outputDevice.print(this.buildPlayerNameString(storeOwner));
+            this.outputDevice.println(this.buildStoreString(board, storeOwner));
+            this.outputDevice.println(innerBorder);
         } else {
-            this.outputDevice.println("| P" + playerName + " " + this.padNumbers(score) + " " + emptyContainer + "|");
+            this.outputDevice.println(innerBorder);
+            this.outputDevice.print("|");
+            this.outputDevice.print(this.buildPlayerNameString(storeOwner));
+            this.outputDevice.print(this.buildStoreString(board, storeOwner));
+            this.outputDevice.println("       |");
+            this.outputDevice.println(outerBorder);
         }
-
-        // Print the bottom border of the store.
-        this.outputDevice.println(bottomBorder);
     }
 
     private String buildBoardRow (int leftHouseNumber, int leftSeedCount, int rightHouseNumber, int rightSeedCount) {
