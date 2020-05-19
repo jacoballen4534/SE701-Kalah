@@ -8,20 +8,6 @@ public class VerticalConsoleDisplay extends ConsoleDisplay {
     public VerticalConsoleDisplay(IO outputDevice) {
         super(outputDevice);
     }
-    /*
-    +---------------+
-    |       | P2  0 |
-    +-------+-------+
-    | 1[ 4] | 6[ 4] |
-    | 2[ 4] | 5[ 4] |
-    | 3[ 4] | 4[ 4] |
-    | 4[ 4] | 3[ 4] |
-    | 5[ 4] | 2[ 4] |
-    | 6[ 4] | 1[ 4] |
-    +-------+-------+
-    | P1  0 |       |
-    +---------------+
-     */
 
     @Override
     public void displayBoard(Board board) {
