@@ -2,9 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fe10ec8-a066-4661-9964-f6905ab20635" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/SE701-Kalah.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SE701-Kalah.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vertical/kalah/Display/ConsoleDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/vertical/kalah/Display/ConsoleDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vertical/kalah/Display/VerticalConsoleDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/vertical/kalah/Display/VerticalConsoleDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vertical/kalah/Board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/v2/kalah/Board/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vertical/kalah/Board/House.java" beforeDir="false" afterPath="$PROJECT_DIR$/v2/kalah/Board/House.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vertical/kalah/Board/Pit.java" beforeDir="false" afterPath="$PROJECT_DIR$/v2/kalah/Board/Pit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vertical/kalah/Board/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/v2/kalah/Board/Store.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vertical/kalah/Display/ConsoleDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/v2/kalah/Display/ConsoleDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vertical/kalah/Display/OutputAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/v2/kalah/Display/OutputAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vertical/kalah/Display/VerticalConsoleDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/v2/kalah/Display/VerticalConsoleDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vertical/kalah/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/v2/kalah/GameManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vertical/kalah/Globals.java" beforeDir="false" afterPath="$PROJECT_DIR$/v2/kalah/Globals.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vertical/kalah/Kalah.java" beforeDir="false" afterPath="$PROJECT_DIR$/v2/kalah/Kalah.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vertical/kalah/Player/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/v2/kalah/Player/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vertical/kalah/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/v2/kalah/Player/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +114,7 @@
       <workItem from="1589769937708" duration="465000" />
       <workItem from="1589777694274" duration="309000" />
       <workItem from="1589778018934" duration="1326000" />
-      <workItem from="1589892650877" duration="1891000" />
+      <workItem from="1589892650877" duration="1929000" />
     </task>
     <servers />
   </component>
@@ -135,22 +146,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="687" y="149" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589707446344" />
-    <state width="1865" height="335" key="GridCell.Tab.0.bottom" timestamp="1589721070591">
+    <state width="1865" height="335" key="GridCell.Tab.0.bottom" timestamp="1589902096461">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="335" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589721070591" />
-    <state width="1865" height="335" key="GridCell.Tab.0.center" timestamp="1589721070591">
+    <state width="1865" height="335" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589902096461" />
+    <state width="1865" height="335" key="GridCell.Tab.0.center" timestamp="1589902096461">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="335" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589721070591" />
-    <state width="1865" height="335" key="GridCell.Tab.0.left" timestamp="1589721070590">
+    <state width="1865" height="335" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589902096461" />
+    <state width="1865" height="335" key="GridCell.Tab.0.left" timestamp="1589902096461">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="335" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589721070590" />
-    <state width="1865" height="335" key="GridCell.Tab.0.right" timestamp="1589721070591">
+    <state width="1865" height="335" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589902096461" />
+    <state width="1865" height="335" key="GridCell.Tab.0.right" timestamp="1589902096461">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="335" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589721070591" />
+    <state width="1865" height="335" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589902096461" />
     <state width="1865" height="331" key="GridCell.Tab.1.bottom" timestamp="1589376724278">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
