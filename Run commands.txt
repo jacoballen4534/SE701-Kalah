@@ -7,3 +7,7 @@ java -cp junit-3.8.2.jar:kalah.jar:. junit.textui.TestRunner kalah.test.TestKala
 Windows
 javac --release 8 -cp junit-3.8.2.jar;kalah.jar;. kalah/Kalah.java
 java -cp junit-3.8.2.jar;kalah.jar;. junit.textui.TestRunner kalah.test.TestKalah
+
+
+
+To switch between horizontal and vertical tests. Just remove one from project structure and add the other.
