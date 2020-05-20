@@ -21,18 +21,6 @@ public class Board {
         }
     }
 
-    public int getFinalPitIndex(){
-        return this.pits.size() - 1;
-    }
-
-    public int getSeedCount(int index){
-        return this.pits.get(index).getNumberOfSeeds();
-    }
-
-    public int getPitOwnerName(int index){
-        return this.pits.get(index).getOwnerName();
-    }
-
     public boolean moveAvailable(Player player) {
         int startingIndex = player.getStartingIndex();
         for (int i = 0; i < Globals.NUMBER_OF_HOUSES_PER_PLAYER; i++) {
@@ -60,7 +48,7 @@ public class Board {
         this.pits.get(playerStoreIndex).placeCapturedSeeds(capturedSeeds);
     }
 
-    public boolean sowSeeds(Player player, int pitNumber) {
+    public MoveOutcome sowSeeds(Player player, int pitNumber) {
         int currentBoardIndex = this.pitNumberToBoardIndex(pitNumber, player);
         int seeds = this.pits.get(currentBoardIndex).getAllSeeds();
 
@@ -75,19 +63,22 @@ public class Board {
         return this.performTurnOutcome(currentBoardIndex, player);
     }
 
-    private boolean performTurnOutcome(int finalSeedPlaceIndex, Player player) {
+    private MoveOutcome performTurnOutcome(int finalSeedPlaceIndex, Player player) {
+        // Check if final seed was in own players store
         if (this.pits.get(finalSeedPlaceIndex).anotherTurn(player)) {
-            return false;
+            return MoveOutcome.ANOTHER_TURN;
         }
 
+        // Check if this is a capture
         int oppositePitIndex = this.oppositePitIndex(finalSeedPlaceIndex);
         if (this.pits.get(finalSeedPlaceIndex).getOwner() == player
                 && this.pits.get(finalSeedPlaceIndex).getNumberOfSeeds() == 1
                 && !this.pits.get(oppositePitIndex).isEmpty()) {
             this.capture(finalSeedPlaceIndex, oppositePitIndex, player);
+            return MoveOutcome.CAPTURE;
         }
 
-        return true;
+        return MoveOutcome.TURN_COMPLETE;
     }
 
     public int oppositePitIndex(int index) {
@@ -106,5 +97,22 @@ public class Board {
             }
         }
         return score;
+    }
+
+    /* Retrieve the number of seeds in all of a players houses. */
+    public ArrayList<Integer> getHouseSeedCounts(Player player) {
+        ArrayList<Integer> playerSeeds = new ArrayList<>();
+        int startingIndex = player.getStartingIndex();
+        for (int i = 0; i < Globals.NUMBER_OF_HOUSES_PER_PLAYER; i++) {
+            Pit pit = this.pits.get(startingIndex+i);
+            playerSeeds.add(pit.getNumberOfSeeds());
+        }
+        return playerSeeds;
+    }
+
+    public int getStoreSeedCounts(Player player) {
+        int storeIndex = player.getStoreIndex();
+        Pit store = this.pits.get(storeIndex);
+        return store.getNumberOfSeeds();
     }
 }

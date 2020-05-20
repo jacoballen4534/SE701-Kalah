@@ -2,11 +2,13 @@ package kalah;
 
 import com.qualitascorpus.testsupport.IO;
 import kalah.Board.Board;
+import kalah.Board.MoveOutcome;
 import kalah.Display.ConsoleDisplay;
 import kalah.Display.OutputAdapter;
 import kalah.Display.VerticalConsoleDisplay;
 import kalah.Player.Human;
 import kalah.Player.Player;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -23,14 +25,16 @@ public class GameManager {
     private final OutputAdapter output;
 
     public GameManager(IO io) {
-        this.players = new ArrayList<Player>(Arrays.asList(new Human(io, 0), new Human(io, 1)));
+        this.output = new ConsoleDisplay(io);
         this.currentPlayerIndex = 0;
+        Human player1 = new Human(io, 0);
+        Human player2 = new Human(io, 1);
+        this.players = new ArrayList<Player>(Arrays.asList(player1, player2));
         this.board = new Board(this.players);
-        this.output = new VerticalConsoleDisplay(io);
     }
 
     public void play() {
-        this.output.displayBoard(board);
+        this.output.displayBoard(this.board, this.players);
 
         while (true) {
 
@@ -48,14 +52,14 @@ public class GameManager {
 
             if (!this.board.validSelection(pitIndex, players.get(currentPlayerIndex))) {
                 output.displayMessage("House is empty. Move again.");
-                this.output.displayBoard(board);
+                this.output.displayBoard(this.board, this.players);
                 continue;
             }
 
-            boolean turnComplete = board.sowSeeds(players.get(currentPlayerIndex), pitIndex);
-            this.output.displayBoard(board);
+            MoveOutcome outcome = board.sowSeeds(players.get(currentPlayerIndex), pitIndex);
+            this.output.displayBoard(this.board, this.players);
 
-            if (turnComplete) {
+            if (outcome == MoveOutcome.CAPTURE || outcome == MoveOutcome.TURN_COMPLETE) {
                 nextPlayer();
             }
         }
@@ -92,6 +96,6 @@ public class GameManager {
 
     public void gameOver(){
         this.output.displayMessage("Game over");
-        this.output.displayBoard(board);
+        this.output.displayBoard(this.board, this.players);
     }
 }
