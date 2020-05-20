@@ -1,7 +1,7 @@
 <component name="libraryTable">
-  <library name="kalah">
+  <library name="kalah-bmf">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/kalah.jar!/" />
+      <root url="jar://$PROJECT_DIR$/kalah-bmf.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
