@@ -2,22 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fe10ec8-a066-4661-9964-f6905ab20635" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/SE701-Kalah.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SE701-Kalah.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/kalah.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/kalah_bmf.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v2/kalah/Board/Board.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/v2/kalah/Board/House.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/v2/kalah/Board/MoveOutcome.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/v2/kalah/Board/Pit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/v2/kalah/Board/Store.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/v2/kalah/Display/ConsoleDisplay.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/v2/kalah/Display/OutputAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/v2/kalah/Display/VerticalConsoleDisplay.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/v2/kalah/GameManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/v2/kalah/Globals.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/v2/kalah/Kalah.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/v2/kalah/Player/Human.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/v2/kalah/Player/Player.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bmf/kalah/Board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/bmf/kalah/Board/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bmf/kalah/Board/Pit.java" beforeDir="false" afterPath="$PROJECT_DIR$/bmf/kalah/Board/Pit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bmf/kalah/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/bmf/kalah/GameManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_specifications_robot/capture.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_specifications_robot/continue_wrap.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_specifications_robot/endinempty.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_specifications_robot/exactlapcapture.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_specifications_robot/exactlapemptycapture.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_specifications_robot/full_game1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_specifications_robot/full_game2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_specifications_robot/full_game_empty_houses.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_specifications_robot/full_game_store.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_specifications_robot/full_game_tie_robot.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_specifications_robot/p1_continue.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_specifications_robot/quit.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_specifications_robot/simple_start.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_specifications_robot/simple_two_moves.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_specifications_robot/single_wrap.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_specifications_robot/test1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_specifications_robot/test2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_specifications_robot/useempty.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +137,7 @@
       <workItem from="1589778018934" duration="1326000" />
       <workItem from="1589892650877" duration="1929000" />
       <workItem from="1589902663644" duration="2389000" />
-      <workItem from="1589971207636" duration="156000" />
+      <workItem from="1589971207636" duration="934000" />
     </task>
     <servers />
   </component>
@@ -147,10 +153,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="312" y="0" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1589376623418" />
-    <state x="410" y="166" width="1119" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589971358691">
+    <state x="410" y="166" width="1119" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589971377493">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="410" y="166" width="1119" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589971358691" />
+    <state x="410" y="166" width="1119" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589971377493" />
     <state x="593" y="350" key="#com.intellij.featureStatistics.actions.ShowFeatureUsageStatisticsDialog" timestamp="1589778034253">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -167,25 +173,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="687" y="149" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589971303587" />
-    <state width="1865" height="287" key="GridCell.Tab.0.bottom" timestamp="1589971319123">
+    <state width="1865" height="468" key="GridCell.Tab.0.bottom" timestamp="1589971880343">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="287" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589971319123" />
+    <state width="1865" height="468" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589971880343" />
     <state width="1358" height="227" key="GridCell.Tab.0.bottom/0.23.1536.937@0.23.1536.937" timestamp="1589904933039" />
-    <state width="1865" height="287" key="GridCell.Tab.0.center" timestamp="1589971319123">
+    <state width="1865" height="468" key="GridCell.Tab.0.center" timestamp="1589971880343">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="287" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589971319123" />
+    <state width="1865" height="468" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589971880343" />
     <state width="1358" height="227" key="GridCell.Tab.0.center/0.23.1536.937@0.23.1536.937" timestamp="1589904933038" />
-    <state width="1865" height="287" key="GridCell.Tab.0.left" timestamp="1589971319123">
+    <state width="1865" height="468" key="GridCell.Tab.0.left" timestamp="1589971880343">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="287" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589971319123" />
+    <state width="1865" height="468" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589971880343" />
     <state width="1358" height="227" key="GridCell.Tab.0.left/0.23.1536.937@0.23.1536.937" timestamp="1589904933038" />
-    <state width="1865" height="287" key="GridCell.Tab.0.right" timestamp="1589971319123">
+    <state width="1865" height="468" key="GridCell.Tab.0.right" timestamp="1589971880343">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="287" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589971319123" />
+    <state width="1865" height="468" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589971880343" />
     <state width="1358" height="227" key="GridCell.Tab.0.right/0.23.1536.937@0.23.1536.937" timestamp="1589904933039" />
     <state width="1865" height="297" key="GridCell.Tab.1.bottom" timestamp="1589971178147">
       <screen x="0" y="0" width="1920" height="1040" />
