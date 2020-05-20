@@ -8,6 +8,7 @@ import kalah.Display.OutputAdapter;
 import kalah.Display.VerticalConsoleDisplay;
 import kalah.Player.Human;
 import kalah.Player.Player;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -24,10 +25,12 @@ public class GameManager {
     private final OutputAdapter output;
 
     public GameManager(IO io) {
-        this.players = new ArrayList<Player>(Arrays.asList(new Human(io, 0), new Human(io, 1)));
-        this.currentPlayerIndex = 0;
-        this.board = new Board(this.players);
         this.output = new ConsoleDisplay(io);
+        this.currentPlayerIndex = 0;
+        Human player1 = new Human(io, 0);
+        Human player2 = new Human(io, 1);
+        this.players = new ArrayList<Player>(Arrays.asList(player1, player2));
+        this.board = new Board(this.players);
     }
 
     public void play() {

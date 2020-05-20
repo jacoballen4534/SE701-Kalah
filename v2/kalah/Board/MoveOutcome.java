@@ -1,7 +1,7 @@
 package kalah.Board;
 
 public enum MoveOutcome {
-    CAPTURE,
     ANOTHER_TURN,
+    CAPTURE,
     TURN_COMPLETE
 }

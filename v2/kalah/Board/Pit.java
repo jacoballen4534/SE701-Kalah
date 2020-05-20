@@ -6,8 +6,6 @@ import kalah.Player.Player;
  */
 abstract public class Pit {
     protected int numberOfSeeds;
-
-
     protected final Player owner;
 
     public Pit(int startingNumberOfSeeds, Player owner) {

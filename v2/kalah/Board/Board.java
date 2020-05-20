@@ -21,18 +21,6 @@ public class Board {
         }
     }
 
-    public int getFinalPitIndex(){
-        return this.pits.size() - 1;
-    }
-
-    public int getSeedCount(int index){
-        return this.pits.get(index).getNumberOfSeeds();
-    }
-
-    public int getPitOwnerName(int index){
-        return this.pits.get(index).getOwnerName();
-    }
-
     public boolean moveAvailable(Player player) {
         int startingIndex = player.getStartingIndex();
         for (int i = 0; i < Globals.NUMBER_OF_HOUSES_PER_PLAYER; i++) {
