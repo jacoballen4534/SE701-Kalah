@@ -2,30 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fe10ec8-a066-4661-9964-f6905ab20635" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/kalah.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/SE701-Kalah.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SE701-Kalah.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/kalah_vertical.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/v2/kalah/Board/MoveOutcome.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Run commands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Run commands.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/capture.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/continue_wrap.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/double_wrap.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/endinempty.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/exactlapcapture.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/exactlapemptycapture.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/full_game1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/full_game2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/full_game_empty.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/full_game_empty_houses.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/full_game_store.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/full_game_tie.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/p1_continue.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/quit.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/simple_start.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/simple_two_moves.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/single_wrap.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/useempty.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications/wrapped.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/v2/kalah/Board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/v2/kalah/Board/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v2/kalah/Display/OutputAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/v2/kalah/Display/OutputAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v2/kalah/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/v2/kalah/GameManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +17,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -157,29 +139,29 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="655" y="151" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1589908792123" />
-    <state x="687" y="149" key="FileChooserDialogImpl" timestamp="1589912382961">
+    <state x="687" y="149" key="FileChooserDialogImpl" timestamp="1589951365408">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="687" y="149" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589912382961" />
-    <state width="1865" height="469" key="GridCell.Tab.0.bottom" timestamp="1589912433608">
+    <state x="687" y="149" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589951365408" />
+    <state width="1865" height="387" key="GridCell.Tab.0.bottom" timestamp="1589951374654">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="469" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589912433608" />
+    <state width="1865" height="387" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589951374654" />
     <state width="1358" height="227" key="GridCell.Tab.0.bottom/0.23.1536.937@0.23.1536.937" timestamp="1589904933039" />
-    <state width="1865" height="469" key="GridCell.Tab.0.center" timestamp="1589912433608">
+    <state width="1865" height="387" key="GridCell.Tab.0.center" timestamp="1589951374654">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="469" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589912433608" />
+    <state width="1865" height="387" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589951374654" />
     <state width="1358" height="227" key="GridCell.Tab.0.center/0.23.1536.937@0.23.1536.937" timestamp="1589904933038" />
-    <state width="1865" height="469" key="GridCell.Tab.0.left" timestamp="1589912433608">
+    <state width="1865" height="387" key="GridCell.Tab.0.left" timestamp="1589951374654">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="469" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589912433608" />
+    <state width="1865" height="387" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589951374654" />
     <state width="1358" height="227" key="GridCell.Tab.0.left/0.23.1536.937@0.23.1536.937" timestamp="1589904933038" />
-    <state width="1865" height="469" key="GridCell.Tab.0.right" timestamp="1589912433608">
+    <state width="1865" height="387" key="GridCell.Tab.0.right" timestamp="1589951374654">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="469" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589912433608" />
+    <state width="1865" height="387" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589951374654" />
     <state width="1358" height="227" key="GridCell.Tab.0.right/0.23.1536.937@0.23.1536.937" timestamp="1589904933039" />
     <state width="1865" height="297" key="GridCell.Tab.1.bottom" timestamp="1589908980622">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -197,10 +179,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1865" height="297" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589908980622" />
-    <state x="312" y="0" key="SettingsEditor" timestamp="1589912428585">
+    <state x="312" y="0" key="SettingsEditor" timestamp="1589951369430">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="312" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1589912428585" />
+    <state x="312" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1589951369430" />
     <state width="600" height="428" key="javadoc.popup" timestamp="1589902874788">
       <screen x="0" y="23" width="1536" height="937" />
     </state>

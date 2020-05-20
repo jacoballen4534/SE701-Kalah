@@ -2,6 +2,7 @@ package kalah;
 
 import com.qualitascorpus.testsupport.IO;
 import kalah.Board.Board;
+import kalah.Board.MoveOutcome;
 import kalah.Display.ConsoleDisplay;
 import kalah.Display.OutputAdapter;
 import kalah.Display.VerticalConsoleDisplay;
@@ -52,10 +53,10 @@ public class GameManager {
                 continue;
             }
 
-            boolean turnComplete = board.sowSeeds(players.get(currentPlayerIndex), pitIndex);
+            MoveOutcome outcome = board.sowSeeds(players.get(currentPlayerIndex), pitIndex);
             this.output.displayBoard(this.board, this.players);
 
-            if (turnComplete) {
+            if (outcome == MoveOutcome.CAPTURE || outcome == MoveOutcome.TURN_COMPLETE) {
                 nextPlayer();
             }
         }

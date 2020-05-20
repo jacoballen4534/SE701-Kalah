@@ -12,5 +12,3 @@ public interface OutputAdapter {
     void displayMessage(String message);
     void displayBoard(final Board board, final ArrayList<Player> players);
 }
-
-
