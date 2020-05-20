@@ -115,4 +115,10 @@ public class Board {
         Pit store = this.pits.get(storeIndex);
         return store.getNumberOfSeeds();
     }
+
+    public void copySeedArrangement(Board boardToCopy) {
+        for (int i = 0; i < this.pits.size(); i++) {
+            this.pits.get(i).copySeeds(boardToCopy.pits.get(i));
+        }
+    }
 }

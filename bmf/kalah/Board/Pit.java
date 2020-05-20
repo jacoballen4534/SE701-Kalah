@@ -46,4 +46,8 @@ abstract public class Pit {
     }
 
     abstract public boolean anotherTurn(Player player);
+
+    public void copySeeds(Pit pitToCopy) {
+        this.numberOfSeeds = pitToCopy.numberOfSeeds;
+    }
 }
