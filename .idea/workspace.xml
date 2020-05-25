@@ -2,28 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fe10ec8-a066-4661-9964-f6905ab20635" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/bmf/kalah/Player/Robot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bmf/kalah/Board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/bmf/kalah/Board/Board.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bmf/kalah/Board/Pit.java" beforeDir="false" afterPath="$PROJECT_DIR$/bmf/kalah/Board/Pit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bmf/kalah/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/bmf/kalah/GameManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications_robot/capture.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications_robot/continue_wrap.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications_robot/endinempty.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications_robot/exactlapcapture.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications_robot/exactlapemptycapture.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications_robot/full_game1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications_robot/full_game2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications_robot/full_game_empty_houses.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications_robot/full_game_store.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications_robot/full_game_tie_robot.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications_robot/p1_continue.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications_robot/quit.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications_robot/simple_start.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications_robot/simple_two_moves.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications_robot/single_wrap.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications_robot/test1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications_robot/test2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_specifications_robot/useempty.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,12 +16,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="first-attempt-adding-robot" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1br3M5GZyDJUPM2Fgm2jINpVIIv" />
@@ -138,6 +126,7 @@
       <workItem from="1589892650877" duration="1929000" />
       <workItem from="1589902663644" duration="2389000" />
       <workItem from="1589971207636" duration="934000" />
+      <workItem from="1590379880784" duration="2948000" />
     </task>
     <servers />
   </component>
@@ -161,6 +150,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="593" y="350" key="#com.intellij.featureStatistics.actions.ShowFeatureUsageStatisticsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589778034253" />
+    <state x="718" y="158" key="#com.intellij.ide.util.MemberChooser" timestamp="1590381209003">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="718" y="158" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590381209003" />
     <state x="623" y="260" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1589377366778">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -173,25 +166,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="687" y="149" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589971303587" />
-    <state width="1865" height="468" key="GridCell.Tab.0.bottom" timestamp="1589971880343">
+    <state width="1865" height="531" key="GridCell.Tab.0.bottom" timestamp="1590382533218">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="468" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589971880343" />
+    <state width="1865" height="531" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590382533218" />
     <state width="1358" height="227" key="GridCell.Tab.0.bottom/0.23.1536.937@0.23.1536.937" timestamp="1589904933039" />
-    <state width="1865" height="468" key="GridCell.Tab.0.center" timestamp="1589971880343">
+    <state width="1865" height="531" key="GridCell.Tab.0.center" timestamp="1590382533218">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="468" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589971880343" />
+    <state width="1865" height="531" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590382533218" />
     <state width="1358" height="227" key="GridCell.Tab.0.center/0.23.1536.937@0.23.1536.937" timestamp="1589904933038" />
-    <state width="1865" height="468" key="GridCell.Tab.0.left" timestamp="1589971880343">
+    <state width="1865" height="531" key="GridCell.Tab.0.left" timestamp="1590382533218">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="468" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589971880343" />
+    <state width="1865" height="531" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590382533218" />
     <state width="1358" height="227" key="GridCell.Tab.0.left/0.23.1536.937@0.23.1536.937" timestamp="1589904933038" />
-    <state width="1865" height="468" key="GridCell.Tab.0.right" timestamp="1589971880343">
+    <state width="1865" height="531" key="GridCell.Tab.0.right" timestamp="1590382533218">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="468" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589971880343" />
+    <state width="1865" height="531" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590382533218" />
     <state width="1358" height="227" key="GridCell.Tab.0.right/0.23.1536.937@0.23.1536.937" timestamp="1589904933039" />
     <state width="1865" height="297" key="GridCell.Tab.1.bottom" timestamp="1589971178147">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -209,10 +202,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1865" height="297" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589971178147" />
-    <state x="312" y="0" key="SettingsEditor" timestamp="1589971306073">
+    <state x="312" y="0" key="SettingsEditor" timestamp="1590382463549">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="312" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1589971306073" />
+    <state x="312" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1590382463549" />
     <state width="600" height="428" key="javadoc.popup" timestamp="1589902874788">
       <screen x="0" y="23" width="1536" height="937" />
     </state>

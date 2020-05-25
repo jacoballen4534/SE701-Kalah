@@ -8,6 +8,7 @@ import kalah.Display.OutputAdapter;
 import kalah.Display.VerticalConsoleDisplay;
 import kalah.Player.Human;
 import kalah.Player.Player;
+import kalah.Player.Robot;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -28,9 +29,10 @@ public class GameManager {
         this.output = new ConsoleDisplay(io);
         this.currentPlayerIndex = 0;
         Human player1 = new Human(io, 0);
-        Human player2 = new Human(io, 1);
+        Robot player2 = new Robot(1, this.output);
         this.players = new ArrayList<Player>(Arrays.asList(player1, player2));
         this.board = new Board(this.players);
+        player2.setupTestingBoard(players, board);
     }
 
     public void play() {
